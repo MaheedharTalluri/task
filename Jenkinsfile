@@ -7,5 +7,16 @@ stages{
 			createjob("dsltest.groovy","name")
 		}
 	}
+	stage('Trigger Build'){
+	steps{
+	jenkinsconnector("freestyle")
+	}
+	}
+	stage('Jenkins collectors'){
+	steps{
+	buildstatus("freestyle",1)
+	lastsuccessfulbuild("freestyle")	
+		}
+	}
 	}
 }
