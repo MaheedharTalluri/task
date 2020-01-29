@@ -4,7 +4,7 @@ agent any
 stages{
 	stage('Create Job Jenkins'){
 		steps{
-			createjob(dsltest.groovy,"name")
+			createjob("dsltest.groovy","name")
 		}
 	}
 	}
