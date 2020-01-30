@@ -15,7 +15,7 @@ stages{
 
 	stage('Create Job Jenkins'){
 		steps{
-			createjob(dsl_filename,jenkins_jobname)
+			createjob(DSL_NAME,JENKINS_NAME)
 			
 		}
 	}
