@@ -5,6 +5,7 @@ stages{
 	stage('Test Stage'){
 		steps{
 			jtest("sample.json")
+			sh 'echo "${jenkins_jobname}"'
 		}
 	
 	}
@@ -15,6 +16,7 @@ stages{
 	stage('Create Job Jenkins'){
 		steps{
 			createjob(dsl_filename,jenkins_jobname)
+			
 		}
 	}
 	stage('Trigger Build'){
