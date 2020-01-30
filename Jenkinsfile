@@ -4,8 +4,10 @@ agent any
 stages{
 	stage('Test Stage'){
 		steps{
+			scripts{
 			def data = readJSON file: "${env.WORKSPACE}\\sample.json"
 			data.ci.jobs.job.job_name
+			}
 		}
 	
 	}
