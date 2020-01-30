@@ -4,8 +4,7 @@ agent any
 stages{
 	stage('Test Stage'){
 		steps{
-		new
-		
+			a()
 		}
 	
 	}
