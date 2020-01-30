@@ -14,7 +14,7 @@ stages{
 
 	stage('Create Job Jenkins'){
 		steps{
-			createjob("dsltest.groovy","name")
+			createjob(dsl_filename,jenkins_jobname)
 		}
 	}
 	stage('Trigger Build'){
