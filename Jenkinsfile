@@ -2,6 +2,17 @@
 pipeline{
 agent any
 stages{
+	stage('Test Stage'){
+		steps{
+		new()
+		
+		}
+	
+	}
+
+
+
+
 	stage('Create Job Jenkins'){
 		steps{
 			createjob("dsltest.groovy","name")
