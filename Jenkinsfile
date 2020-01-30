@@ -5,7 +5,7 @@ stages{
 	stage('Test Stage'){
 		steps{
 			jtest("sample.json")
-			sh 'echo "${jenkins_jobname}"'
+			sh "echo '${jenkins_jobname}'"
 		}
 	
 	}
